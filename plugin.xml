@@ -5,8 +5,8 @@
   found in the LICENSE file.
 -->
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-    id="com.google.playservices"
-    version="19.0.0">
+    id="cordova-plugin-googleplayservices"
+    version="19.0.2">
   <engines>
     <engine name="cordova" version=">=3.0.0" />
   </engines>
@@ -22,4 +22,15 @@
 
     <source-file src="version.xml" target-dir="res/values" />
   </platform>
+
+  <platform name="amazon-fireos">
+    <source-file src="google-play-services.jar" target-dir="libs" />
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    </config-file>
+
+    <source-file src="version.xml" target-dir="res/values" />
+  </platform>
+
 </plugin>
