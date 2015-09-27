@@ -6,7 +6,7 @@
 -->
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="cordova-plugin-googleplayservices"
-    version="19.0.2">
+    version="19.0.3">
   <engines>
     <engine name="cordova" version=">=3.0.0" />
   </engines>
@@ -23,6 +23,7 @@
     <source-file src="version.xml" target-dir="res/values" />
   </platform>
 
+  <!-- same as android -->
   <platform name="amazon-fireos">
     <source-file src="google-play-services.jar" target-dir="libs" />
 

@@ -1,11 +1,12 @@
 {
   "name": "cordova-plugin-googleplayservices",
-  "version": "19.0.2",
+  "version": "19.0.3",
   "description": "Cordova Plugin to add google-play-services.jar",
   "cordova": {
     "id": "cordova-plugin-googleplayservices",
     "platforms": [
-      "android"
+      "android",
+      "amazon-fireos"
     ]
   },
   "repository": {
